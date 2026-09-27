@@ -1,5 +1,9 @@
 # GM Print v2 development scope
 
+## D3 bounded implementation authorization (2026-09-27)
+
+The owner explicitly authorizes local D3/R1a persistent company/contact foundation, auth, import, provenance, consent and UI integration on codex/delivery-3-company-foundation. ERP contract DR-01 blocks live ERP, not this isolated slice. Local TypeScript/PostgreSQL baseline is allowed. Other architecture decisions remain proposed. No paid resources, main merge, public application release or real personal-data migration. D3 is not all R1/v2. User's Delivery 3 request takes precedence over the earlier blanket coding gate below.
+
 - Work only in this v2 repository for future implementation. The sibling gm-print-studio project and original GitHub repository preserve v1.
 - Never move/delete the v1 tag or force-push the baseline history.
 - Preserve M01–M16 and the existing 64 submodule / 192 workflow IDs.

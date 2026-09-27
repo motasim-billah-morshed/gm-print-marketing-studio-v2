@@ -7,3 +7,10 @@ node_modules/
 .versioning-tools/
 qa-artifacts/
 *.tar.gz
+.local-tools/
+.private/
+.public/
+dist-api/
+test-results/
+*.dump
+*.log

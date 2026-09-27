@@ -1,0 +1,683 @@
+{
+  "milestone": "D3 / R1a — local only",
+  "modules": [
+    {
+      "id": "M01",
+      "name": "ব্যবসার প্রেক্ষাপট ও মার্কেটিং পরিকল্পনা",
+      "status": "Deferred",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M01.S1",
+          "phases": [
+            "M01.S1.F1",
+            "M01.S1.F2",
+            "M01.S1.F3"
+          ]
+        },
+        {
+          "id": "M01.S2",
+          "phases": [
+            "M01.S2.F1",
+            "M01.S2.F2",
+            "M01.S2.F3"
+          ]
+        },
+        {
+          "id": "M01.S3",
+          "phases": [
+            "M01.S3.F1",
+            "M01.S3.F2",
+            "M01.S3.F3"
+          ]
+        },
+        {
+          "id": "M01.S4",
+          "phases": [
+            "M01.S4.F1",
+            "M01.S4.F2",
+            "M01.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "name": "নিজস্ব ডেটা আপলোড ও ইমপোর্ট",
+      "status": "Partial",
+      "scope": "Manual entry and CSV/XLSX mapping, preview, jobs, effects and rollback. OCR/ERP import deferred.",
+      "evidence": "D3-EVIDENCE.md; tests/foundation.test.ts",
+      "submodules": [
+        {
+          "id": "M02.S1",
+          "phases": [
+            "M02.S1.F1",
+            "M02.S1.F2",
+            "M02.S1.F3"
+          ]
+        },
+        {
+          "id": "M02.S2",
+          "phases": [
+            "M02.S2.F1",
+            "M02.S2.F2",
+            "M02.S2.F3"
+          ]
+        },
+        {
+          "id": "M02.S3",
+          "phases": [
+            "M02.S3.F1",
+            "M02.S3.F2",
+            "M02.S3.F3"
+          ]
+        },
+        {
+          "id": "M02.S4",
+          "phases": [
+            "M02.S4.F1",
+            "M02.S4.F2",
+            "M02.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "অনলাইন কোম্পানি আবিষ্কার ও enrichment",
+      "status": "Deferred",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M03.S1",
+          "phases": [
+            "M03.S1.F1",
+            "M03.S1.F2",
+            "M03.S1.F3"
+          ]
+        },
+        {
+          "id": "M03.S2",
+          "phases": [
+            "M03.S2.F1",
+            "M03.S2.F2",
+            "M03.S2.F3"
+          ]
+        },
+        {
+          "id": "M03.S3",
+          "phases": [
+            "M03.S3.F1",
+            "M03.S3.F2",
+            "M03.S3.F3"
+          ]
+        },
+        {
+          "id": "M03.S4",
+          "phases": [
+            "M03.S4.F1",
+            "M03.S4.F2",
+            "M03.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "name": "ডেটার মান, পরিচয় ও যাচাই",
+      "status": "Partial",
+      "scope": "Limited identity review, field observations and authorized verification. Advanced merge/unmerge deferred.",
+      "evidence": "D3-EVIDENCE.md; tests/foundation.test.ts",
+      "submodules": [
+        {
+          "id": "M04.S1",
+          "phases": [
+            "M04.S1.F1",
+            "M04.S1.F2",
+            "M04.S1.F3"
+          ]
+        },
+        {
+          "id": "M04.S2",
+          "phases": [
+            "M04.S2.F1",
+            "M04.S2.F2",
+            "M04.S2.F3"
+          ]
+        },
+        {
+          "id": "M04.S3",
+          "phases": [
+            "M04.S3.F1",
+            "M04.S3.F2",
+            "M04.S3.F3"
+          ]
+        },
+        {
+          "id": "M04.S4",
+          "phases": [
+            "M04.S4.F1",
+            "M04.S4.F2",
+            "M04.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "name": "কোম্পানি ও কন্টাক্টের 360° ডেটাবেস",
+      "status": "Partial",
+      "scope": "Persistent company directory, hierarchy, contacts, temporal roles, endpoints, provenance and consent. Full intelligence enrichment deferred.",
+      "evidence": "D3-EVIDENCE.md; tests/foundation.test.ts",
+      "submodules": [
+        {
+          "id": "M05.S1",
+          "phases": [
+            "M05.S1.F1",
+            "M05.S1.F2",
+            "M05.S1.F3"
+          ]
+        },
+        {
+          "id": "M05.S2",
+          "phases": [
+            "M05.S2.F1",
+            "M05.S2.F2",
+            "M05.S2.F3"
+          ]
+        },
+        {
+          "id": "M05.S3",
+          "phases": [
+            "M05.S3.F1",
+            "M05.S3.F2",
+            "M05.S3.F3"
+          ]
+        },
+        {
+          "id": "M05.S4",
+          "phases": [
+            "M05.S4.F1",
+            "M05.S4.F2",
+            "M05.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M06",
+      "name": "সেগমেন্ট, অডিয়েন্স ও personalization",
+      "status": "Deferred",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M06.S1",
+          "phases": [
+            "M06.S1.F1",
+            "M06.S1.F2",
+            "M06.S1.F3"
+          ]
+        },
+        {
+          "id": "M06.S2",
+          "phases": [
+            "M06.S2.F1",
+            "M06.S2.F2",
+            "M06.S2.F3"
+          ]
+        },
+        {
+          "id": "M06.S3",
+          "phases": [
+            "M06.S3.F1",
+            "M06.S3.F2",
+            "M06.S3.F3"
+          ]
+        },
+        {
+          "id": "M06.S4",
+          "phases": [
+            "M06.S4.F1",
+            "M06.S4.F2",
+            "M06.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "name": "AI গবেষণা, ধারণা ও কনটেন্ট পরিকল্পনা",
+      "status": "Demo only",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M07.S1",
+          "phases": [
+            "M07.S1.F1",
+            "M07.S1.F2",
+            "M07.S1.F3"
+          ]
+        },
+        {
+          "id": "M07.S2",
+          "phases": [
+            "M07.S2.F1",
+            "M07.S2.F2",
+            "M07.S2.F3"
+          ]
+        },
+        {
+          "id": "M07.S3",
+          "phases": [
+            "M07.S3.F1",
+            "M07.S3.F2",
+            "M07.S3.F3"
+          ]
+        },
+        {
+          "id": "M07.S4",
+          "phases": [
+            "M07.S4.F1",
+            "M07.S4.F2",
+            "M07.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M08",
+      "name": "AI লেখা, SEO ও বহুভাষিক কনটেন্ট",
+      "status": "Demo only",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M08.S1",
+          "phases": [
+            "M08.S1.F1",
+            "M08.S1.F2",
+            "M08.S1.F3"
+          ]
+        },
+        {
+          "id": "M08.S2",
+          "phases": [
+            "M08.S2.F1",
+            "M08.S2.F2",
+            "M08.S2.F3"
+          ]
+        },
+        {
+          "id": "M08.S3",
+          "phases": [
+            "M08.S3.F1",
+            "M08.S3.F2",
+            "M08.S3.F3"
+          ]
+        },
+        {
+          "id": "M08.S4",
+          "phases": [
+            "M08.S4.F1",
+            "M08.S4.F2",
+            "M08.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M09",
+      "name": "AI ছবি, ডিজাইন ও পণ্য প্রদর্শন",
+      "status": "Demo only",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M09.S1",
+          "phases": [
+            "M09.S1.F1",
+            "M09.S1.F2",
+            "M09.S1.F3"
+          ]
+        },
+        {
+          "id": "M09.S2",
+          "phases": [
+            "M09.S2.F1",
+            "M09.S2.F2",
+            "M09.S2.F3"
+          ]
+        },
+        {
+          "id": "M09.S3",
+          "phases": [
+            "M09.S3.F1",
+            "M09.S3.F2",
+            "M09.S3.F3"
+          ]
+        },
+        {
+          "id": "M09.S4",
+          "phases": [
+            "M09.S4.F1",
+            "M09.S4.F2",
+            "M09.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M10",
+      "name": "AI ভিডিও, অডিও ও ইন্টারঅ্যাকটিভ কনটেন্ট",
+      "status": "Demo only",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M10.S1",
+          "phases": [
+            "M10.S1.F1",
+            "M10.S1.F2",
+            "M10.S1.F3"
+          ]
+        },
+        {
+          "id": "M10.S2",
+          "phases": [
+            "M10.S2.F1",
+            "M10.S2.F2",
+            "M10.S2.F3"
+          ]
+        },
+        {
+          "id": "M10.S3",
+          "phases": [
+            "M10.S3.F1",
+            "M10.S3.F2",
+            "M10.S3.F3"
+          ]
+        },
+        {
+          "id": "M10.S4",
+          "phases": [
+            "M10.S4.F1",
+            "M10.S4.F2",
+            "M10.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M11",
+      "name": "Asset library, review ও প্রকাশের অনুমোদন",
+      "status": "Demo only",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M11.S1",
+          "phases": [
+            "M11.S1.F1",
+            "M11.S1.F2",
+            "M11.S1.F3"
+          ]
+        },
+        {
+          "id": "M11.S2",
+          "phases": [
+            "M11.S2.F1",
+            "M11.S2.F2",
+            "M11.S2.F3"
+          ]
+        },
+        {
+          "id": "M11.S3",
+          "phases": [
+            "M11.S3.F1",
+            "M11.S3.F2",
+            "M11.S3.F3"
+          ]
+        },
+        {
+          "id": "M11.S4",
+          "phases": [
+            "M11.S4.F1",
+            "M11.S4.F2",
+            "M11.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M12",
+      "name": "চ্যানেল, ক্যাম্পেইন ও বিতরণ",
+      "status": "Demo only",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M12.S1",
+          "phases": [
+            "M12.S1.F1",
+            "M12.S1.F2",
+            "M12.S1.F3"
+          ]
+        },
+        {
+          "id": "M12.S2",
+          "phases": [
+            "M12.S2.F1",
+            "M12.S2.F2",
+            "M12.S2.F3"
+          ]
+        },
+        {
+          "id": "M12.S3",
+          "phases": [
+            "M12.S3.F1",
+            "M12.S3.F2",
+            "M12.S3.F3"
+          ]
+        },
+        {
+          "id": "M12.S4",
+          "phases": [
+            "M12.S4.F1",
+            "M12.S4.F2",
+            "M12.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M13",
+      "name": "Lead capture ও কেন্দ্রীয় response inbox",
+      "status": "Demo only",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M13.S1",
+          "phases": [
+            "M13.S1.F1",
+            "M13.S1.F2",
+            "M13.S1.F3"
+          ]
+        },
+        {
+          "id": "M13.S2",
+          "phases": [
+            "M13.S2.F1",
+            "M13.S2.F2",
+            "M13.S2.F3"
+          ]
+        },
+        {
+          "id": "M13.S3",
+          "phases": [
+            "M13.S3.F1",
+            "M13.S3.F2",
+            "M13.S3.F3"
+          ]
+        },
+        {
+          "id": "M13.S4",
+          "phases": [
+            "M13.S4.F1",
+            "M13.S4.F2",
+            "M13.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M14",
+      "name": "AI lead qualification ও nurture সিদ্ধান্ত",
+      "status": "Demo only",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M14.S1",
+          "phases": [
+            "M14.S1.F1",
+            "M14.S1.F2",
+            "M14.S1.F3"
+          ]
+        },
+        {
+          "id": "M14.S2",
+          "phases": [
+            "M14.S2.F1",
+            "M14.S2.F2",
+            "M14.S2.F3"
+          ]
+        },
+        {
+          "id": "M14.S3",
+          "phases": [
+            "M14.S3.F1",
+            "M14.S3.F2",
+            "M14.S3.F3"
+          ]
+        },
+        {
+          "id": "M14.S4",
+          "phases": [
+            "M14.S4.F1",
+            "M14.S4.F2",
+            "M14.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M15",
+      "name": "ERP handoff ও মার্কেটিং কার্যক্রম পর্যবেক্ষণ",
+      "status": "Blocked",
+      "scope": "Preserved in requirements; no operational implementation in D3.",
+      "evidence": "ARCHITECTURE-REVIEW.md; D3-DECISIONS.md",
+      "submodules": [
+        {
+          "id": "M15.S1",
+          "phases": [
+            "M15.S1.F1",
+            "M15.S1.F2",
+            "M15.S1.F3"
+          ]
+        },
+        {
+          "id": "M15.S2",
+          "phases": [
+            "M15.S2.F1",
+            "M15.S2.F2",
+            "M15.S2.F3"
+          ]
+        },
+        {
+          "id": "M15.S3",
+          "phases": [
+            "M15.S3.F1",
+            "M15.S3.F2",
+            "M15.S3.F3"
+          ]
+        },
+        {
+          "id": "M15.S4",
+          "phases": [
+            "M15.S4.F1",
+            "M15.S4.F2",
+            "M15.S4.F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M16",
+      "name": "প্রশাসন, নিরাপত্তা ও AI অপারেশন",
+      "status": "Partial",
+      "scope": "Session login, scoped permissions, persisted audit and private storage. Production security/retention/AI operations deferred.",
+      "evidence": "D3-EVIDENCE.md; tests/foundation.test.ts",
+      "submodules": [
+        {
+          "id": "M16.S1",
+          "phases": [
+            "M16.S1.F1",
+            "M16.S1.F2",
+            "M16.S1.F3"
+          ]
+        },
+        {
+          "id": "M16.S2",
+          "phases": [
+            "M16.S2.F1",
+            "M16.S2.F2",
+            "M16.S2.F3"
+          ]
+        },
+        {
+          "id": "M16.S3",
+          "phases": [
+            "M16.S3.F1",
+            "M16.S3.F2",
+            "M16.S3.F3"
+          ]
+        },
+        {
+          "id": "M16.S4",
+          "phases": [
+            "M16.S4.F1",
+            "M16.S4.F2",
+            "M16.S4.F3"
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "name": "Company/contact persistence and authorized local UI",
+      "status": "Implemented",
+      "evidence": "D3-02,03,08,11,12"
+    },
+    {
+      "name": "Import and consent foundation",
+      "status": "Implemented",
+      "evidence": "D3-04–10"
+    },
+    {
+      "name": "Live ERP",
+      "status": "Blocked",
+      "evidence": "DR-01 unresolved"
+    },
+    {
+      "name": "Production deployment",
+      "status": "Deferred",
+      "evidence": "Separate owner authorization required"
+    }
+  ]
+}
