@@ -15,6 +15,7 @@ Clean-source exercise: exported committed `30a82f5` via `git archive` into a fre
 - `npm run test:demo`: **1,051 assertions / 210 routes**, 16/64/192 preserved. These are prototype tests only.
 - `npm test`: **16/16 named D3 tests**, no skipped or failed tests; clean-source run **7,925.6343 ms** overall. Small synthetic fixture suite, not a load/SLA benchmark.
 - Real API server was closed/recreated during D3-02 with PostgreSQL sessions/data intact; second independent authenticated client read the same company/two contacts.
+- Final review-visibility polish exposes reviewer, evidence, decision and time in the source history. Typecheck and the expanded 16/16 PostgreSQL/API suite passed again in **8,640.4308 ms** after that additive change; schema/setup remained unchanged from the clean-source run.
 
 ## Acceptance matrix
 
