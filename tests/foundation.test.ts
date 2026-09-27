@@ -98,6 +98,7 @@ test('D3-10 authorized source review; phone is not WhatsApp consent',async()=>{
  await operator.request('/observations/'+obs.id+'/review','POST',{status:'Verified',evidence:'Operator cannot verify'},randomUUID(),403);
  await operator.request('/consent','POST',{endpoint_id:phone.id,purpose:'marketing',status:'OptedIn',evidence:'Unauthorized grant'},randomUUID(),403);
  await reviewer.request('/observations/'+obs.id+'/review','POST',{status:'Verified',evidence:'Synthetic documented check'});
+ const reviewed=(await reader.request('/observations?entity_id='+phone.id)).rows.find((o:any)=>o.id===obs.id);assert.equal(reviewed.reviews[0].reviewer,'reviewer');assert.equal(reviewed.reviews[0].evidence,'Synthetic documented check');
  const eligible=await reader.request('/endpoints/'+phone.id+'/eligibility?purpose=marketing');assert.equal(eligible.eligible,false);assert.equal(eligible.consent_status,'Unknown');assert.equal(eligible.dispatch_enabled,false);
  const whatsapp=await operator.create('channel_endpoint',{channel:'WhatsApp',raw_value:phone.raw_value});assert.notEqual(whatsapp.id,phone.id);assert.equal((await reader.request('/endpoints/'+whatsapp.id+'/eligibility')).consent_status,'Unknown');
 });
