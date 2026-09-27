@@ -9,8 +9,8 @@ const link=(label,to,kind='',ico)=>`<a class="btn ${kind}" href="#/${to}">${ico?
 const money=n=>'৳'+n.toLocaleString('en-US');
 let modules=[],route=[],timer,importRows=null;
 const initial=()=>({companies:structuredClone(seedCompanies),flows:{},forms:{},approved:[false,false,false],campaigns:structuredClone(campaigns),qualified:[],transfers:[],selectedMessage:0,paused:false,settings:{mask:true,review:true,consent:true},audit:[],drafts:{},imported:false});
-let state=initial();try{const saved=JSON.parse(sessionStorage.getItem('gm-studio-v1'));if(saved&&saved.companies&&saved.flows)state={...state,...saved};}catch{}
-function save(){try{sessionStorage.setItem('gm-studio-v1',JSON.stringify(state));}catch{toast('Browser storage unavailable. Changes stay in this session.');}}
+let state=initial();try{const saved=JSON.parse(sessionStorage.getItem('gm-print:v2:public-demo:2026'));if(saved&&saved.companies&&saved.flows)state={...state,...saved};}catch{}
+function save(){try{sessionStorage.setItem('gm-print:v2:public-demo:2026',JSON.stringify(state));}catch{toast('Browser storage unavailable. Changes stay in this session.');}}
 function log(action){state.audit.unshift({action,time:new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})});state.audit=state.audit.slice(0,30);save();}
 function toast(s){$('#toast').textContent=s;$('#toast').classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>$('#toast').classList.remove('visible'),3500);}
 function head(title,description,actions=''){return `<div class="page-head"><div><div class="eyebrow" style="margin-bottom:8px">GM Print workspace</div><h1>${title}</h1><p>${description}</p></div><div class="actions">${actions}</div></div>`;}
