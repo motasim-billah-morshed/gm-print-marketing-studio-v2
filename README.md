@@ -1,4 +1,14 @@
-# GM Print · Marketing Studio
+# GM Print · Marketing Studio v2
+
+**Development workspace — copied from the preserved v1 baseline.**
+
+- [Original v1 live demo](https://motasim-billah-morshed.github.io/gm-print-marketing-studio/)
+- [Preserved v1 release](https://github.com/motasim-billah-morshed/gm-print-marketing-studio/releases/tag/v1)
+- [Changes since v1](https://github.com/motasim-billah-morshed/gm-print-marketing-studio-v2/compare/v1...main)
+- [Versioning and recovery](VERSIONING.md) · [Changelog](CHANGELOG.md)
+- [Proposed v2 architecture review](ARCHITECTURE-REVIEW.md) · [Audited v1 requirements](V1-SOURCE.md)
+
+The initial v2 application retains v1 functionality with a visible development label. Production architecture decisions remain open for owner review; no real AI, delivery or ERP integration has been enabled.
 
 Interactive UI/UX prototype for company intelligence, AI-assisted content, digital campaigns and qualified lead generation.
 
